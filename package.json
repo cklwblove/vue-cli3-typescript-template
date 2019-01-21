@@ -11,7 +11,7 @@
     "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6",
     "analyz": "vue-cli-service build --mode analyz",
     "report": "npm_config_generate_report=true npm run build",
-    "deploy": "npm run build && node build/zip.js"
+    "deploy": "npm run build && node build/zip.ts"
   },
   "scripts-info": {
     "serve": "运行开发服务器",

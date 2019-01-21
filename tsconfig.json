@@ -20,8 +20,7 @@
     "paths": {
       "@/*": [
         "src/*"
-      ],
-      "utils": ["node_modules/@liwb/cloud-utils"]
+      ]
     },
     "lib": [
       "esnext",
@@ -32,6 +31,7 @@
   },
   "include": [
     "src/**/*.ts",
+    "build/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
