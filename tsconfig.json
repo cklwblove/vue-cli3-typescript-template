@@ -31,14 +31,14 @@
   },
   "include": [
     "src/**/*.ts",
-    "build/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "types/*.d.ts"
+    "./types/*.d.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "build/*.ts"
   ]
 }
