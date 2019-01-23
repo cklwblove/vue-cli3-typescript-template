@@ -25,13 +25,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,vue}": [
-      "tslint",
+    "*.{ts,vue}": [
+      "tslint --fix",
       "git add"
     ]
   },
   "dependencies": {
-    "@liwb/cloud-utils": "^1.2.7",
+    "@liwb/cloud-utils": "^1.3.0",
     "@types/node": "^10.12.18",
     "@types/webpack-env": "^1.13.6",
     "axios": "^0.18.0",

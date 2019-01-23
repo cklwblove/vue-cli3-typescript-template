@@ -5,7 +5,8 @@
   ],
   "linterOptions": {
     "exclude": [
-      "node_modules/**"
+      "node_modules/**",
+      "build/**"
     ]
   },
   "rules": {
@@ -14,6 +15,7 @@
     "trailing-comma": false,
     "interface-name": false,
     "ordered-imports": false,
+    "no-var-requires": false,
     "object-literal-sort-keys": false,
     "no-consecutive-blank-lines": false,
     "no-console": false

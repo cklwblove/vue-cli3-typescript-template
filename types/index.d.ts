@@ -4,5 +4,5 @@ interface Window {
 
 declare var window: Window;
 
-// cloud-utils
-declare module '@liwb/cloud-utils';
+// @liwb/cloud-utils -> webpack alias utils
+declare module 'utils';

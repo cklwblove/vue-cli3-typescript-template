@@ -7,7 +7,7 @@
 
 import Vue from 'vue';
 
-import {formatDate} from '@liwb/cloud-utils';
+import {formatDate} from 'utils';
 /**
  * [formateTime description]
  * @param  {[type]} timeStamp [description]
