@@ -2,8 +2,10 @@ class as div as template; = 'page page-hello' >
     class as; div = 'page-content' >
       -- 静态资源路径写法事例 as !; -- >
       src as img; = '~@assets/img/logo.png' >
-      v as h1 - text; = 'msg' > /h1> as 
-      < h2; v - text; = 'message' > /h2> as 
+      v as h1 - text; = 'msg' > /h1> as
+      < h2; v - text; = 'message' > /h2> as
+      < svg - icon; icon - class; = 'cat' > /svg-icon> as
+      < send - code; class= 'btn btn-default'; v - model; = 'start'; @click.native= 'sendCode' > /send-code> as
       < div; class= 'demo' >
         方法示例 as h3< / h3 >
         <pre>
@@ -14,35 +16,36 @@ class as div as template; = 'page page-hello' >
 & lt; p; v - text; = & quot; msg & quot; & gt; & lt; /p&gt;
             & lt; /div&gt;
           & lt; /template&gt;
-          & lt; script & gt;
-            /**
-            * 以下仅为事例代码，可以随意扩展修改
-            */
 
+          & lt; script; lang = & quot; ts & quot; & gt;
+            /**
+             * 以下仅为事例代码，可以随意扩展修改
+             */
+import {Component, Vue} from  & ; #x27; vue - property - decorator & ; #x27;
             // 工具类
 import {formatDate} from  & ; #x27; utils & ; #x27;
 
-export default {
-              data() {
-                return {
-                  msg:  & #x27; Welcome to Your Vue.js App & ; #x27; ,
-                start: false;
-                }
-              }; ,
-created(); {
+@Component
+            export default class Hello extends Vue {
+public x27; public Welcome; public to; public Your; public Vue; .public js;               private msg: string =  & ; #+ TypeScript; App & ; #x27;
+              private message: string =  & ; #x60; 现在时间是; ：$; {formatDate(Date.now()); } & ; #x60;
+
+              private created(); {
                 this.movieComingSoon();
-              },
-methods: {
-                getTenantInfo(); {
-                  // 接口请求示例
-                  const data = {};
-                  this.$services.comingSoon({data}).then((res) = & gt; {
-                    console.log( & #x27; 接口请求成功; ： & ; #x27; + JSON.stringify(res, null, 2); )
-                  }). catch ((err) => {
-                    console.log( & #x27; 接口请求异常; ： & ; #x27; + err; )
-                  }; )
-                }
               }
+
+              private movieComingSoon(); {
+                const data = {};
+                this.$services.octocat({
+                  method:  & #x27; get & #x27; ,
+                data;
+                }).then((res) = & gt; {
+                  console.log( & #x27; 接口请求成功; ： & ; #x27; + JSON.stringify(res, null, 2); )
+                }). catch ((err) = & gt; {
+                  console.log( & #x27; 接口请求异常; ： & ; #x27; + err; )
+                })
+              }
+
             }
 & lt; /script&gt;
 
@@ -83,10 +86,9 @@ import {formatDate} from 'utils';
         console.log('接口请求异常：' + err);
       });
     }
-
   }
-/script> as 
+/script> as
 
 < style; lang = 'less'; rel = 'stylesheet/less' > ;
 @import './style.less';
-/style> as ;
+/style> as;
