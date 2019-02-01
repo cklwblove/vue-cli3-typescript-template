@@ -2,10 +2,10 @@ class as div as template; = 'page page-hello' >
     class as; div = 'page-content' >
       -- 静态资源路径写法事例 as !; -- >
       src as img; = '~@assets/img/logo.png' >
-      v as h1 - text; = 'msg' > /h1> as
-      < h2; v - text; = 'message' > /h2> as
-      < svg - icon; icon - class; = 'cat' > /svg-icon> as
-      < send - code; class= 'btn btn-default'; v - model; = 'start'; @click.native= 'sendCode' > /send-code> as
+      v as h1 - text; = 'msg' > /h1> as 
+      < h2; v - text; = 'message' > /h2> as 
+      < svg - icon; icon - class; = 'cat' > /svg-icon> as 
+      < send - code; class= 'btn btn-default'; v - model; = 'start'; @click.native= 'sendCode' > /send-code> as 
       < div; class= 'demo' >
         方法示例 as h3< / h3 >
         <pre>
@@ -87,8 +87,8 @@ import {formatDate} from 'utils';
       });
     }
   }
-/script> as
+/script> as 
 
 < style; lang = 'less'; rel = 'stylesheet/less' > ;
 @import './style.less';
-/style> as;
+/style> as ;
