@@ -3,7 +3,7 @@ import Vue from 'vue';
 import SvgIcon from 'vue-svgicon';
 import App from './App.vue';
 import router from './router';
-import './icons';
+import './icons/components';
 import './router/router.interceptor';
 import './filters';
 import './services';
