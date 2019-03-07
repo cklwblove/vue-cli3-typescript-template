@@ -23,3 +23,7 @@ yarn run build
 ```
 yarn run lint
 ```
+
+## License
+
+[MIT](https://github.com/cklwblove/vue-cli3-typescript-template/blob/master/LICENSE)
