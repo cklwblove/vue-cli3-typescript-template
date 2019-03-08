@@ -12,7 +12,8 @@
     "analyz": "vue-cli-service build --mode analyz",
     "report": "npm_config_generate_report=true npm run build",
     "deploy": "npm run build && node build/zip.ts",
-    "release": "sh ./build/release.sh"
+    "release": "sh ./build/release.sh",
+    "inspect": "vue inspect > output.js --verbose"
   },
   "scripts-info": {
     "serve": "运行开发服务器",
