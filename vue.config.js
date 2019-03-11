@@ -213,5 +213,9 @@ module.exports = {
             openAnalyzer: false
           }])
       );
+  },
+  pluginOptions: {
+    lintStyleOnBuild: true,
+    stylelint: {}
   }
 };
