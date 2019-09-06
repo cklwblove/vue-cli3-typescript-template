@@ -1,5 +1,6 @@
 interface Window {
   LOCAL_CONFIG?: any;
+  $eventBus?: any;
 }
 
 declare var window: Window;

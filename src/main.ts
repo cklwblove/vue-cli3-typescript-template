@@ -7,6 +7,7 @@ import './router/router.interceptor';
 import './filters';
 import './services';
 import './registerServiceWorker';
+import './bus';
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
 
